@@ -16,11 +16,11 @@
       padding: 10px 20px;
       cursor: pointer;
       border: none;
-      background: #eee;
+      background: #9af3c2;
       font-weight: bold;
     }
     .tab-btn.active {
-      background: #ccc;
+      background: #495961;
     }
     .tab-content {
       display: none;
@@ -31,37 +31,59 @@
   </style>
 </head>
 <body>
-  <div class="tabs">
+  <div style="color: rgb(122, 106, 218);" class="tabs">
     <button class="tab-btn active" onclick="showTab('home')">Home</button>
     <button class="tab-btn" onclick="showTab('downloads')">Downloads</button>
     <button class="tab-btn" onclick="showTab('contacts')">Contacts</button>
   </div>
 
   <div id="home" class="tab-content active">
-    <h1>welcome to my website</h1>
+    <h1 style="background-color: aquamarine;">welcome to my website</h1>
     <p>Am still studing website development so take a look of my site and send your feed back in contacts tabs</p>
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;"></div>
       <img src="img/pro.jpg" alt="My uploaded photo" width="250" height="250" style="object-fit: cover; border-radius: 8px;">
       <img src="img/bb.jpg" alt="Another photo" width="250" height="250" style="object-fit: cover; border-radius: 8px;">
-  </div>
-    <button onclick="sayHello()">Click me</button>
-  </div>
+  <p style="color: rgb(2, 19, 51);"><b>greetings from me click bellow to say Hello to me</b></p>
+   <button style="color: aquamarine;" onclick="sayHello()">GREET ME HERE</button>
+</div>
 
   <div id="downloads" class="tab-content">
-    <h1>Downloads</h1>
-    <p>Here you can find downloadable content.</p>
+    <h1 style="background-color: aquamarine;">Downloads</h1>
+    <p>Here you can find downloadable content</p>
+    <p>
+    bellow shown is my tiktok video embeded from tiktok official site
+    </p> <p>
+    watch and download if you like it give me a follow on tiktok share and like my videos  
+    </p>
+    <iframe 
+      src="https://www.tiktok.com/embed/7550418947783412998" 
+      width="350" 
+      height="705" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+    <iframe
+      src="https://www.tiktok.com/embed/7549238994882596152"
+      width="350" 
+      height="705" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
     <p>Currently i dont have what you can download from my website</p>
-    <p>But you can check back later for updates.</p>
-r <div id="contacts" class="tab-content">
-    <h1>Contacts</h1>
+    <p>But you can check back later for updates. I am trying my best to updtade the web so that can have meaning</p>
+  </div>
+<div id="contacts" class="tab-content">
+    <h1 style="background-color: aquamarine;">Contacts</h1>
     <p>Feel free to reach out to me via email or social media.</p>
     <p>Follow me on social media:</p>
     <ul>
-      <li><a href="https://www.facebook.com/bruze.brize.9" target="_\blank">Facebook</a></li>   
+      <li><a href="https://www.facebook.com/bruze.brize.9" target="_blank">Facebook</a></li>   
       <li><a href="https://www.instagram.com/zebedee_mukisu?utm_source=qr&igsh=ZGRpN2c2bGFsMHY3/" target="_blank">Instagram</a></li>
       <li><a href="https://www.twitter.com/zebedee_mukisu" target="_blank">Twitter</a></li>
-      <li>Email: <a href="mailto:bruzeb4@gmail.com">bruzeb4@gmail.com</a></li>
-        </ul>
+      <li>Email: <a href="mailto:bruzeb4@gmail.com">Here</a></li>
+      <li>WhatsApp: <a href="https://wa.me/254112087299" target="_blank">Chat on WhatsApp</a></li>
+      <li>Phone: <a href="tel:+254112087299">Call Direct</a></li>
+    </ul>
   </div>
 
   <script>
@@ -81,10 +103,10 @@ r <div id="contacts" class="tab-content">
     }
 
     function sayHello() {
-      alert('Hello!');
+      alert('Thanks you for greeting am fine, developing better site!');
     }
   </script>
-  <footer style="text-align:center; margin-top:40px; padding:20px; background:#eee;">
+  <footer style="text-align:center; margin-top:40px; padding:20px; background:aquamarine;">
     &copy; 2025 Mukisu Tech. All rights reserved.
   </footer>
 </body>
