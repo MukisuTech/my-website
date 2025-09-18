@@ -1,0 +1,59 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for tabs */
+.tabs {
+    display: flex;
+    gap: 12px;
+    padding: 24px;
+    background: #f5f7fa;
+}
+
+/* Individual tab styles */
+.tab {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 126, 95, 0.15);
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+    outline: none;
+    border: none;
+}
+
+/* Different colors for each tab (example for 3 tabs) */
+.tab:nth-child(2) {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    box-shadow: 0 2px 8px rgba(67, 206, 162, 0.15);
+}
+.tab:nth-child(3) {
+    background: linear-gradient(90deg, #ffaf7b 0%, #d76d77 100%);
+    box-shadow: 0 2px 8px rgba(215, 109, 119, 0.15);
+}
+
+/* Glow effect on hover/focus */
+.tab:hover,
+.tab:focus {
+    box-shadow: 0 0 16px 4px rgba(255, 126, 95, 0.5), 0 2px 8px rgba(0,0,0,0.08);
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+}
+
+.tab:nth-child(2):hover,
+.tab:nth-child(2):focus {
+    box-shadow: 0 0 16px 4px rgba(67, 206, 162, 0.5), 0 2px 8px rgba(0,0,0,0.08);
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+}
+
+.tab:nth-child(3):hover,
+.tab:nth-child(3):focus {
+    box-shadow: 0 0 16px 4px rgba(215, 109, 119, 0.5), 0 2px 8px rgba(0,0,0,0.08);
+    background: linear-gradient(90deg, #ffaf7b 0%, #d76d77 100%);
+}

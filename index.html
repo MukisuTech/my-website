@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Simple tab styles */
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: #eee;
+      font-weight: bold;
+    }
+    .tab-btn.active {
+      background: #ccc;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('home')">Home</button>
+    <button class="tab-btn" onclick="showTab('downloads')">Downloads</button>
+    <button class="tab-btn" onclick="showTab('contacts')">Contacts</button>
+  </div>
+
+  <div id="home" class="tab-content active">
+    <h1>Hello, World!</h1>
+    <p>This is my first website.</p>
+    <button onclick="sayHello()">Click me</button>
+  </div>
+
+  <div id="downloads" class="tab-content">
+    <h1>Downloads</h1>
+    <p>Here you can find downloadable content.</p>
+    <!-- Add download links here -->
+  </div>
+
+  <div id="contacts" class="tab-content">
+    <h1>Contacts</h1>
+    <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+    <!-- Add more contact info here -->
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      // Hide all tab contents
+      document.querySelectorAll('.tab-content').forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+      // Remove active class from all buttons
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      // Show selected tab and activate button
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function sayHello() {
+      alert('Hello!');
+    }
+  </script>
+  <footer style="text-align:center; margin-top:40px; padding:20px; background:#eee;">
+    &copy; 2025 Mukisu Tech. All rights reserved.
+  </footer>
+</body>
+</html>
